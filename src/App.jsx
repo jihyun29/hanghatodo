@@ -4,6 +4,7 @@ import Header from "./component/Header";
 import Input from "./component/Input";
 import Working from "./component/Working";
 import Done from "./component/Done";
+import { v4 as uuidv4 } from 'uuid';
 
 
 const App = () => {
@@ -29,7 +30,7 @@ const App = () => {
   //추가버튼(+미입력시 알림창)
   const clickAddButtonHandler = () => {
     const newTodoItem = {
-      id: todos.length + 1,
+      id: uuidv4(),
       title,
       content: content,
       isDone: false,
@@ -72,7 +73,7 @@ const App = () => {
         title={title}
         content={content}
       />
-      <div className="cardroll">
+      <div className="card">
         <h1>Working.. 🔥</h1>
         <Working
         clickRemoveButtonHandler={clickRemoveButtonHandler}

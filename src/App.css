@@ -36,6 +36,14 @@
   
 }
 
+.box{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  word-break: break-all;
+}
 
 /* todo박스 */
 .todo-container {
@@ -68,12 +76,11 @@
     
 }
 
-.cardroll{
+.card{
   
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: stretch;
-  
 
 }
 

@@ -6,7 +6,7 @@ const Done = ({
   dones,
 }) => {
   return (
-    <div>
+    <div className="box">
     {dones.map(function (done) {
       return (
         <div className="todo-container" key={done.id}>

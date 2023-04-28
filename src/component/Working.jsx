@@ -5,7 +5,7 @@ const Working = ({
 
 }) => {
   return (
-    <div>
+    <div className="box" >
     {workings.map(function (working) {
       return (
         <div className="todo-container" key={working.id}>
